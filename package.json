@@ -1,0 +1,11 @@
+{
+  "name": "hamedge-gateway",
+  "version": "1.0.0",
+  "description": "Stealth Node Gateway",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "wget -q -O xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip && unzip -q xray.zip xray && mv xray sys_core && rm xray.zip && chmod +x sys_core && wget -q -O net_daemon https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && chmod +x net_daemon"
+  },
+  "dependencies": {}
+}
